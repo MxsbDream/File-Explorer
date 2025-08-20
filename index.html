@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestionnaire de fichiers</title>
+  <script defer src="app.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-all">
+  <div class="p-4 max-w-3xl mx-auto">
+    <div class="flex justify-between items-center mb-4">
+      <h1 class="text-2xl font-bold">🗂️ Gestionnaire de fichiers</h1>
+      <button id="toggleDark" class="px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded">🌙 Mode sombre</button>
+    </div>
+
+    <input type="file" id="fileInput" multiple class="mb-4" />
+    <input type="text" id="searchInput" placeholder="🔍 Rechercher un fichier..." class="mb-4 p-2 border rounded w-full" />
+
+    <div id="fileList" class="grid grid-cols-1 gap-2"></div>
+
+    <h2 class="mt-6 text-xl font-semibold">🕘 Historique</h2>
+    <ul id="historyList" class="list-disc pl-5 mt-2"></ul>
+  </div>
+</body>
+</html>
